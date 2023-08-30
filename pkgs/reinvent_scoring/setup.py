@@ -1,5 +1,8 @@
 import setuptools
 
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
 setuptools.setup(
     name="reinvent_scoring",
     version="0.0.73",

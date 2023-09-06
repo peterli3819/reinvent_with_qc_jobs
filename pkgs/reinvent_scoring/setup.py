@@ -13,6 +13,7 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/MolecularAI/reinvent-scoring.git",
     package_data={"reinvent_scoring": ["scoring/score_components/synthetic_accessibility/fpscores.pkl.gz"]},
+    packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",

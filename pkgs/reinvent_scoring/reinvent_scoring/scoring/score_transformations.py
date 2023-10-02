@@ -30,8 +30,14 @@ class TransformationFactory:
         return transformation_function
 
     def no_transformation(self, predictions: list, parameters: dict) -> np.array:
-        return np.array(predictions, dtype=np.float32)
-
+        def curation(value):
+            if value == None:
+                return 0
+            else:
+                return value
+        transformed = [curation(value) for value in predictions]
+        return np.array(transformed, dtype=np.float32)
+        
     def right_step(self, predictions, parameters) -> np.array:
         _low = parameters[TransformationParametersEnum.LOW]
 

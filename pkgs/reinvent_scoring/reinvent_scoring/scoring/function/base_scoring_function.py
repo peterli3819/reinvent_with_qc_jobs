@@ -134,7 +134,8 @@ class BaseScoringFunction(ABC):
     def _component_is_penalty(self, summary: ComponentSummary) -> bool:
         return (summary.parameters.component_type == self.component_enum.MATCHING_SUBSTRUCTURE) or (
                 summary.parameters.component_type == self.component_enum.MATCHING_SCAFFOLD) or (
-                summary.parameters.component_type == self.component_enum.CUSTOM_ALERTS)
+                summary.parameters.component_type == self.component_enum.CUSTOM_ALERTS) or (
+                summary.parameters.component_type == self.component_enum.BINDER)
 
     def _parallel_final_score(self, smiles: List[str]) -> FinalSummary:
         molecules, valid_indices = self._chemistry.smiles_to_mols_and_indices(smiles)

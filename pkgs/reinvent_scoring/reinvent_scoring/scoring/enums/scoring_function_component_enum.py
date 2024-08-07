@@ -16,6 +16,7 @@ class ScoringFunctionComponentNameEnum:
     MOLECULAR_WEIGHT = "molecular_weight"
     NUM_ROTATABLE_BONDS = "num_rotatable_bonds"
     CONS_ROTATABLE_BONDS = "cons_rotatable_bonds"
+    BINDER = "binder"
     SCSCORE = "scscore"
     SASCORE = "sascore"
     NUM_HBD_LIPINSKI = "num_hbd_lipinski"

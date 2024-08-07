@@ -6,7 +6,7 @@ from reinvent_scoring.scoring.score_components import BaseScoreComponent
 from reinvent_scoring.scoring.score_components import TanimotoSimilarity, \
     JaccardDistance, CustomAlerts, QedScore, MatchingSubstructure, MatchingScaffold,\
     RocsSimilarity, ParallelRocsSimilarity, PredictivePropertyComponent, SelectivityComponent, \
-    SASComponent, MolWeight, PSA, RotatableBonds, ConsRotatableBonds, SCScore, SAScore, HBD_Lipinski, HBA_Lipinski, \
+    SASComponent, MolWeight, PSA, RotatableBonds, ConsRotatableBonds, Binder, SCScore, SAScore, HBD_Lipinski, HBA_Lipinski, \
     NumRings, SlogP, AZdock, RatPKPiP, PiPLogPredictionComponent, PiPPredictionComponent, \
     QptunaPiPModelComponent, StringPiPPredictionComponent, GraphLength, NumberOfStereoCenters, \
     LinkerLengthRatio, LinkerGraphLength, LinkerEffectiveLength, LinkerNumRings, LinkerNumAliphaticRings, \
@@ -35,6 +35,7 @@ class ScoreComponentFactory:
             enum.TPSA: PSA,
             enum.NUM_ROTATABLE_BONDS: RotatableBonds,
             enum.CONS_ROTATABLE_BONDS: ConsRotatableBonds,
+            enum.BINDER: Binder,
             enum.SCSCORE: SCScore,
             enum.SASCORE: SAScore,
             enum.GRAPH_LENGTH: GraphLength,

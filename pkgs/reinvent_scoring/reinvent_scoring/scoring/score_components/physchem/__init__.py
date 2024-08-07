@@ -8,6 +8,7 @@ from reinvent_scoring.scoring.score_components.physchem.mol_weight import MolWei
 from reinvent_scoring.scoring.score_components.physchem.num_rings import NumRings
 from reinvent_scoring.scoring.score_components.physchem.rot_bonds import RotatableBonds
 from reinvent_scoring.scoring.score_components.physchem.cons_rot_bonds import ConsRotatableBonds
+from reinvent_scoring.scoring.score_components.physchem.binder import Binder
 from reinvent_scoring.scoring.score_components.physchem.scscore import SCScore
 from reinvent_scoring.scoring.score_components.physchem.sascore import SAScore
 from reinvent_scoring.scoring.score_components.physchem.slogp import SlogP
